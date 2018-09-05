@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="ANSI_X3.4-1968"?>
+<!--
+Property of Four Js*
+(c) Copyright Four Js 1995, 2018. All Rights Reserved.
+* Trademark of Four Js Development Tools Europe Ltd
+  in the United States and elsewhere
+
+Four Js and its suppliers do not warrant or guarantee that these
+samples are accurate and suitable for your purposes. Their inclusion is
+purely for information purposes only.
+-->
+
+<StartMenu text="Demo">
+  <StartMenuGroup text="Widgets">
+    <StartMenuCommand text="Edit" exec="fglrun edit_widget.42r" />
+  </StartMenuGroup>
+  <StartMenuGroup text="SubGroups">
+    <StartMenuCommand text="Command1" exec="fglrun hello Command1" />
+    <StartMenuCommand text="Command2" exec="fglrun hello Command2" />
+    <StartMenuCommand text="Command3" exec="fglrun hello Command3" />
+    <StartMenuGroup text="SubGroup1">
+      <StartMenuCommand text="Command241" exec="fglrun hello Command241" />
+      <StartMenuCommand text="Command242" exec="fglrun hello Command242" />
+      <StartMenuCommand text="Command243" exec="fglrun hello Command243" />
+    </StartMenuGroup>
+    <StartMenuGroup text="SubGroup2">
+      <StartMenuCommand text="Command251" exec="fglrun hello Command251" />
+      <StartMenuCommand text="Command252" exec="fglrun hello Command252" />
+      <StartMenuCommand text="Command253" exec="fglrun hello Command253" />
+    </StartMenuGroup>
+  </StartMenuGroup>
+  <StartMenuGroup text="Separators">
+    <StartMenuCommand text="Command1" exec="fglrun hello Command1" />
+    <StartMenuCommand text="Command2" exec="fglrun hello Command2" />
+    <StartMenuCommand text="Command3" exec="fglrun hello Command3" />
+    <StartMenuSeparator/>
+    <StartMenuCommand text="Command4" exec="fglrun hello Command4" />
+    <StartMenuCommand text="Command5" exec="fglrun hello Command5" />
+    <StartMenuCommand text="Command6" exec="fglrun hello Command6" />
+    <StartMenuSeparator/>
+    <StartMenuCommand text="Command7" exec="fglrun hello Command7" />
+    <StartMenuCommand text="Command8" exec="fglrun hello Command8" />
+    <StartMenuCommand text="Command9" exec="fglrun hello Command9" />
+  </StartMenuGroup>
+  <StartMenuGroup text="Attributes">
+    <StartMenuCommand text="Command1-disabled" exec="fglrun hello Command1" disabled="1" />
+    <StartMenuCommand text="Command2-hidden"   exec="fglrun hello Command2" hidden="1" />
+    <StartMenuCommand text="Command3-comment"  exec="fglrun hello Command3" comment="My comment" />
+    <StartMenuCommand text="Command4-image"    exec="fglrun hello Command4" image="smiley" />
+    <StartMenuCommand text="Command5-waiting"  exec="fglrun hello Command5" waiting="1" />
+  </StartMenuGroup>
+</StartMenu>

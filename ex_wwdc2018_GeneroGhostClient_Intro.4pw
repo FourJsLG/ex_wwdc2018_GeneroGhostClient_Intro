@@ -63,9 +63,23 @@
   </Settings>
   <LanguageList version="1.0"/>
   <PlatformList version="1.0"/>
-  <Group label="Group" language="Genero">
-    <Application binaryName="Application" dependencies="14000,1986" id="18736" label="Application"/>
-    <Library binaryName="Databases" id="1986" label="Databases"/>
-    <Library binaryName="Library" dependencies="1986" id="14000" label="Library"/>
+  <Group label="Applications" language="Genero">
+    <Group label="Main">
+      <Application binaryName="mainmenu" dependencies="14000,1986" id="18736" label="mainmenu">
+        <File filePath="mainmenu.4gl"/>
+        <File filePath="mainmenu_sm.4sm"/>
+        <File filePath="mainmenu_styles.4st"/>
+      </Application>
+    </Group>
+    <Group label="Subprograms">
+      <Application binaryName="edit_widget" id="9505722" label="edit_widget">
+        <File filePath="edit_widget.4gl"/>
+        <File filePath="edit_widget.per"/>
+      </Application>
+      <Application binaryName="hello" id="290408370" label="hello">
+        <File filePath="hello.4gl"/>
+        <File filePath="hello.per"/>
+      </Application>
+    </Group>
   </Group>
 </Project>
