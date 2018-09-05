@@ -7,43 +7,43 @@
 # samples are accurate and suitable for your purposes. Their inclusion is
 # purely for information purposes only.
 
-MAIN
-
+ MAIN
+ 
   DEFINE fe_client STRING
-
+  
   CALL ui.Interface.loadStartMenu("mainmenu_sm")
   CALL ui.Interface.loadStyles("mainmenu_styles")
-
+  
   # Possible values returned TO feName:
   # "Genero Desktop Client" for Genero Desktop Client.
   # "GBC" for Genero Browser Client.
   # "GMA" for Genero Mobile for Android.
   # "GMI" for Genero Mobile for iOS.
   CALL ui.Interface.frontCall("standard", "feInfo", ["feName"], [fe_client])
-
+  
   CLOSE WINDOW SCREEN
   
   CASE fe_client
-
-    WHEN "Genero Desktop Client"
+  
+     WHEN "Genero Desktop Client"
        OPEN WINDOW w1 WITH 20 ROWS, 80 COLUMNS ATTRIBUTES(STYLE="sm2")
-
-     WHEN "GBC"
+       
+      WHEN "GBC"
        OPEN WINDOW w1 WITH 20 ROWS, 80 COLUMNS ATTRIBUTES(STYLE="sm1")
-
-     OTHERWISE
+       
+      OTHERWISE
        DISPLAY "front-end not applicable to display this app !"
        EXIT PROGRAM
     
   END CASE
-
+  
   MENU "Test"
-
-    ON ACTION QUIT
+  
+     ON ACTION QUIT
       EXIT MENU 
       
   END MENU
-
+  
   CLOSE WINDOW w1
   
 END MAIN

@@ -66,10 +66,10 @@
   <Group label="Applications" language="Genero">
     <Group label="Main">
       <Application binaryName="mainmenu" dependencies="14000,1986" id="18736" label="mainmenu">
-        <File filePath="mainmenu.4gl"/>
         <File filePath="mainmenu_sm.4sm"/>
         <File filePath="mainmenu_styles.4st"/>
       </Application>
+      <Application binaryName="mainmenu_test" id="472839606" label="mainmenu_test"/>
     </Group>
     <Group label="Subprograms">
       <Application binaryName="edit_widget" id="9505722" label="edit_widget">
