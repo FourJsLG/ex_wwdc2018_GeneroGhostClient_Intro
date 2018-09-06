@@ -66,12 +66,17 @@
   <Group label="Applications" language="Genero">
     <Group label="Main">
       <Application binaryName="mainmenu" dependencies="14000,1986" id="18736" label="mainmenu">
+        <File filePath="mainmenu.4gl"/>
         <File filePath="mainmenu_sm.4sm"/>
         <File filePath="mainmenu_styles.4st"/>
       </Application>
-      <Application binaryName="mainmenu_test" id="472839606" label="mainmenu_test"/>
+      <Application binaryName="mainmenu_test" id="472839606" label="mainmenu_test" targetDirectory="$(ProjectDir)/testbin"/>
     </Group>
     <Group label="Subprograms">
+      <Application binaryName="detail_list" id="47850239" label="detail_list">
+        <File filePath="detail_list.4gl"/>
+        <File filePath="detail_list.per"/>
+      </Application>
       <Application binaryName="edit_widget" id="9505722" label="edit_widget">
         <File filePath="edit_widget.4gl"/>
         <File filePath="edit_widget.per"/>

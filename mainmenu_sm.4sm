@@ -14,6 +14,9 @@ purely for information purposes only.
   <StartMenuGroup text="Widgets">
     <StartMenuCommand text="Edit" exec="fglrun edit_widget.42r" />
   </StartMenuGroup>
+   <StartMenuGroup text="Lists">
+    <StartMenuCommand text="Detail List" exec="fglrun detail_list.42r" />
+  </StartMenuGroup>
   <StartMenuGroup text="SubGroups">
     <StartMenuCommand text="Command1" exec="fglrun hello Command1" />
     <StartMenuCommand text="Command2" exec="fglrun hello Command2" />
