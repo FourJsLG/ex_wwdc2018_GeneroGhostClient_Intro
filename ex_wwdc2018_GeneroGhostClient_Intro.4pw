@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<Project defaultApplication="18736" gstVersion="30a09" version="3.2">
+<Project defaultApplication="148989620" gstVersion="30a09" version="3.2">
   <Settings>
     <DynamicProperties version="2">
       <DynamicProperty description="Accent color (Android 5.0 and later)" initialValue="#9575CD" isDefaultInherited="false" isHidden="false" label="Accent color" name="gma-accent-color" readOnly="false" type="COLOR"/>
@@ -63,27 +63,25 @@
   </Settings>
   <LanguageList version="1.0"/>
   <PlatformList version="1.0"/>
-  <Group label="Applications" language="Genero">
-    <Group label="Main">
-      <Application binaryName="mainmenu" dependencies="14000,1986" id="18736" label="mainmenu">
-        <File filePath="mainmenu.4gl"/>
-        <File filePath="mainmenu_sm.4sm"/>
-        <File filePath="mainmenu_styles.4st"/>
+  <Group environment="dirlist:DBPATH=$(DBPATH);$(ProjectDir)/db" label="GGC_sample" language="Genero">
+    <Group label="Applications">
+      <Application binaryName="ggc_sample" dependencies="1043873600" id="148989620" label="ggc_sample">
+        <File filePath="src/ggc_sample.4gl"/>
+        <File filePath="src/ggc_sample.per"/>
       </Application>
-      <Application binaryName="mainmenu_test" id="472839606" label="mainmenu_test" targetDirectory="$(ProjectDir)/testbin"/>
     </Group>
-    <Group label="Subprograms">
-      <Application binaryName="detail_list" id="47850239" label="detail_list">
-        <File filePath="detail_list.4gl"/>
-        <File filePath="detail_list.per"/>
+    <Group label="Databases">
+      <Library binaryName="ggc_sample" id="1043873600" label="ggc_sample">
+        <File filePath="db/ggc_sample.4db"/>
+      </Library>
+    </Group>
+    <Group compilerOptions="-I $(FGLDIR)\testing_utilities\ggc\lib" label="Unit_Testing" targetDirectory="$(ProjectDir)/testbin">
+      <Application binaryName="ggc_sample_loader" id="788651634" label="ggc_sample_loader"/>
+      <Application binaryName="ggc_sample_test1" commandLineArguments="--workingDir &quot;..\bin" dependencies="148989620" id="9464868" label="ggc_sample_test1">
+        <File filePath="tests/test1.4gl"/>
       </Application>
-      <Application binaryName="edit_widget" id="9505722" label="edit_widget">
-        <File filePath="edit_widget.4gl"/>
-        <File filePath="edit_widget.per"/>
-      </Application>
-      <Application binaryName="hello" id="290408370" label="hello">
-        <File filePath="hello.4gl"/>
-        <File filePath="hello.per"/>
+      <Application binaryName="ggc_sample_test2" commandLineArguments="--workingDir &quot;..\bin" id="305181232" label="ggc_sample_test2">
+        <File filePath="tests/test2.4gl"/>
       </Application>
     </Group>
   </Group>
