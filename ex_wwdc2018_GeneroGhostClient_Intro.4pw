@@ -75,13 +75,29 @@
         <File filePath="db/ggc_sample.4db"/>
       </Library>
     </Group>
+    <Group label="LoadPerf_Testing" targetDirectory="$(ProjectDir)/loadperfbin">
+      <Application binaryName="ggc_sample_loader" commandLineArguments="2 10" id="62801025" label="ggc_sample_loader">
+        <File filePath="tests/ggc_sample_loader.4gl"/>
+      </Application>
+    </Group>
     <Group compilerOptions="-I $(FGLDIR)\testing_utilities\ggc\lib" label="Unit_Testing" targetDirectory="$(ProjectDir)/testbin">
-      <Application binaryName="ggc_sample_loader" id="788651634" label="ggc_sample_loader"/>
-      <Application binaryName="ggc_sample_test1" commandLineArguments="--workingDir &quot;..\bin" dependencies="148989620" id="9464868" label="ggc_sample_test1">
+      <Application binaryName="ggc_samole_test4" commandLineArguments="--workingDir ..\bin" dependencies="148989620" id="361620" label="ggc_samole_test4">
+        <File filePath="tests/test4.4gl"/>
+      </Application>
+      <Application binaryName="ggc_sample_test1" commandLineArguments="--workingDir ..\bin" dependencies="148989620" id="9464868" label="ggc_sample_test1">
         <File filePath="tests/test1.4gl"/>
       </Application>
       <Application binaryName="ggc_sample_test2" commandLineArguments="--workingDir &quot;..\bin" id="305181232" label="ggc_sample_test2">
         <File filePath="tests/test2.4gl"/>
+      </Application>
+      <Application binaryName="ggc_sample_test3" commandLineArguments="--workingDir ..\bin" dependencies="148989620" id="58496750" label="ggc_sample_test3">
+        <File filePath="tests/test3.4gl"/>
+      </Application>
+      <Application binaryName="ggc_sample_test5" commandLineArguments="--workingDir ..\bin" dependencies="148989620" id="119865654" label="ggc_sample_test5">
+        <File filePath="tests/test5.4gl"/>
+      </Application>
+      <Application binaryName="ggc_sample_unitmenu" dependencies="148989620,9464868,305181232" id="788651634" label="ggc_sample_unitmenu">
+        <File filePath="tests/ggc_sample_unitmenu.4gl"/>
       </Application>
     </Group>
   </Group>
